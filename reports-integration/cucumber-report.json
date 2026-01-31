@@ -1,0 +1,3820 @@
+[
+  {
+    "description": "  As a user\n  I want to see and change a counter value on the home page\n  So that I can interact with a simple stateful component",
+    "elements": [
+      {
+        "description": "",
+        "id": "counter;counter-displays-initial-value",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Counter displays initial value",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11932399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 454700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1626299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter is mounted in the DOM",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1951299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "the counter store count is 0",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 494500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "the counter is initialized",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2009699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the counter display shows \"0\"",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 349499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 169899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "counter;increment-counter",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Increment counter",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6080400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter is mounted in the DOM",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 646899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "the counter store count is 0",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the counter is mounted in the DOM",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the counter is initialized",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 712499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I click the increment button",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 290700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the counter display shows \"1\"",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 195799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I click the increment button again",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the counter display shows \"2\"",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "counter;decrement-counter",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Decrement counter",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2632900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter is mounted in the DOM",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 448299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "the counter store count is 3",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the counter is mounted in the DOM",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the counter is initialized",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 406799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I click the decrement button",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "the counter display shows \"2\"",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I click the decrement button again",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 287600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the counter display shows \"1\"",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 42599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "counter;counter-subscribes-to-store-changes",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Counter subscribes to store changes",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3036000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 169499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter is mounted in the DOM",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 633700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "the counter is initialized",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 358999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "the counter store count is set to 5",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 195000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the counter display is updated to reflect the new value",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "counter;counter-cleanup-on-navigation",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Counter cleanup on navigation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2010500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter is mounted in the DOM",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 289300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 41,
+            "name": "the counter is initialized and I have clicked increment",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 515000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "I navigate away from the home page",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 301300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "the counter cleanup is executed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 150099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "click events are removed from the counter buttons",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:103"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "counter;counter-init-fails-when-mount-element-is-missing",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Counter init fails when mount element is missing",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2211199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter is mounted in the DOM",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 481599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 47,
+            "name": "the counter mount element does not exist",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:107"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "I try to initialize the counter",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "an error \"Element not found\" is thrown",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 206999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "counter",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Counter",
+    "tags": [
+      {
+        "name": "@counter",
+        "line": 1
+      }
+    ],
+    "uri": "features\\counter\\counter.feature"
+  },
+  {
+    "description": "  As a user\n  I want to see a value that is the main counter multiplied by 10\n  So that I can see a derived state from the counter store",
+    "elements": [
+      {
+        "description": "",
+        "id": "multiple-counter;multiple-counter-displays-count-times-10",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Multiple counter displays count times 10",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2756700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter store is available",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 222399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "the counter store count is 0",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "the multiple counter is initialized",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 792500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the multiple counter display shows \"0\"",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multiple-counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "multiple-counter;multiple-counter-updates-when-store-changes",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Multiple counter updates when store changes",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1919000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter store is available",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "the multiple counter is initialized",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 527900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the counter store count is set to 3",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 195400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the multiple counter display shows \"30\"",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the counter store count is set to 5",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the multiple counter display shows \"50\"",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multiple-counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "multiple-counter;multiple-counter-uses-correct-multiplier",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Multiple counter uses correct multiplier",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1165399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter store is available",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "the multiple counter is initialized",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 396299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "the counter store count is 1",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the multiple counter display shows \"10\"",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "the counter store count is 10",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "the multiple counter display shows \"100\"",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 236900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multiple-counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "multiple-counter;multiple-counter-init-fails-when-mount-element-is-missing",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Multiple counter init fails when mount element is missing",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1969499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter store is available",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "the multiple counter mount element does not exist",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 267900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I try to initialize the multiple counter",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 159499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "an error \"Element not found\" is thrown",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multiple-counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "multiple-counter;multiple-counter-subscribes-to-counter-store",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Multiple counter subscribes to counter store",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 936299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the home page is displayed",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the counter store is available",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "the multiple counter is initialized",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 501199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "the counter store count is 2",
+            "match": {
+              "location": "features\\counter\\counter.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "the counter store notifies subscribers",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 272999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the multiple counter display is updated to \"20\"",
+            "match": {
+              "location": "features\\multiple-counter\\multiple-counter.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 255899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multiple-counter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "multiple-counter",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Multiple counter",
+    "tags": [
+      {
+        "name": "@multiple-counter",
+        "line": 1
+      }
+    ],
+    "uri": "features\\multiple-counter\\multiple-counter.feature"
+  },
+  {
+    "description": "  As a user\n  I want to navigate through the application\n  So that I can access different pages with proper state management",
+    "elements": [
+      {
+        "description": "",
+        "id": "front-end-router;basic-navigation-to-home",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Basic navigation to home",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2434299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the router is initialized",
+            "match": {
+              "location": "features\\router\\router.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 331300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I visit the home page",
+            "match": {
+              "location": "features\\router\\router.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 198300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see the home page content",
+            "match": {
+              "location": "features\\router\\router.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the page title should be \"Bun Front Boilerplate\"",
+            "match": {
+              "location": "features\\router\\router.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 242899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the URL should be \"/\"",
+            "match": {
+              "location": "features\\router\\router.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 347199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@router",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "front-end-router;navigation-to-about-page",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Navigation to About page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1655700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the router is initialized",
+            "match": {
+              "location": "features\\router\\router.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I click on the \"About\" link",
+            "match": {
+              "location": "features\\router\\router.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3076999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should see the About page content",
+            "match": {
+              "location": "features\\router\\router.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 164099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the page title should be \"Bun Front Boilerplate\"",
+            "match": {
+              "location": "features\\router\\router.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the URL should be \"/about\"",
+            "match": {
+              "location": "features\\router\\router.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the history should be updated",
+            "match": {
+              "location": "features\\router\\router.steps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@router",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "front-end-router;router-state-reflects-current-page",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Router state reflects current page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1712500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the router is initialized",
+            "match": {
+              "location": "features\\router\\router.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "the router is initialized",
+            "match": {
+              "location": "features\\router\\router.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I visit the home page",
+            "match": {
+              "location": "features\\router\\router.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the URL should be \"/\"",
+            "match": {
+              "location": "features\\router\\router.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I click on the \"About\" link",
+            "match": {
+              "location": "features\\router\\router.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 624599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "the URL should be \"/about\"",
+            "match": {
+              "location": "features\\router\\router.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@router",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "front-end-router",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Front-end Router",
+    "tags": [
+      {
+        "name": "@router",
+        "line": 1
+      }
+    ],
+    "uri": "features\\router\\router.feature"
+  },
+  {
+    "description": "  As a user\n  I want to navigate between application pages\n  So that I can access Home and About with the correct controller and template",
+    "elements": [
+      {
+        "description": "",
+        "id": "routes;home-route-is-available",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Home route is available",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1979299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I visit the home page",
+            "match": {
+              "location": "features\\router\\router.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see the home page content",
+            "match": {
+              "location": "features\\router\\router.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the page title should be \"Bun Front Boilerplate\"",
+            "match": {
+              "location": "features\\router\\router.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the URL should be \"/\"",
+            "match": {
+              "location": "features\\router\\router.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the home template should be rendered",
+            "match": {
+              "location": "features\\routes\\routes.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 308700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 60799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@routes",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "routes;about-route-is-available",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "About route is available",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1619699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I click on the \"About\" link",
+            "match": {
+              "location": "features\\router\\router.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 635200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see the About page content",
+            "match": {
+              "location": "features\\router\\router.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the page title should be \"Bun Front Boilerplate\"",
+            "match": {
+              "location": "features\\router\\router.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the URL should be \"/about\"",
+            "match": {
+              "location": "features\\router\\router.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the about template should be rendered",
+            "match": {
+              "location": "features\\routes\\routes.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 297800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@routes",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "routes;routes-map-defines-home-and-about",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Routes map defines Home and About",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1890799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "the application is loaded",
+            "match": {
+              "location": "features\\router\\router.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the routes should include path \"/\"",
+            "match": {
+              "location": "features\\routes\\routes.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 440800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the routes should include path \"/about\"",
+            "match": {
+              "location": "features\\routes\\routes.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 285800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "each route should have a template and controller",
+            "match": {
+              "location": "features\\routes\\routes.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 520399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 57700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@routes",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "routes",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Routes",
+    "tags": [
+      {
+        "name": "@routes",
+        "line": 1
+      }
+    ],
+    "uri": "features\\routes\\routes.feature"
+  },
+  {
+    "description": "  As a user\n  I want to use the application in my preferred language\n  So that I can understand and interact with the interface effectively",
+    "elements": [
+      {
+        "description": "",
+        "id": "translation-and-internationalization;language-detection-from-browser",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Language detection from browser",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1839699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 222400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "translation data is available",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 197400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I visit the application for the first time",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 285899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "no language preference is stored",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "the application initializes",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 282400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the browser language is detected",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "if the browser language is supported, it is set as current language",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:83"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "if the browser language is not supported, French is set as default",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@translate",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "translation-and-internationalization;language-persistence-in-localstorage",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Language persistence in localStorage",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1451800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "translation data is available",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I have previously selected a language",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2329199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the application loads",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the stored language preference is retrieved",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the application uses the stored language",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the language preference persists across sessions",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@translate",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "translation-and-internationalization;language-switching",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Language switching",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 977399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "translation data is available",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I am using the application",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 363299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I change the language setting",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 280999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "the current language is updated",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 130900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "all UI elements with data-translate are updated",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 211299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "the language preference is saved to localStorage",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 123200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@translate",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "translation-and-internationalization;translation-retrieval",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Translation retrieval",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1073399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "translation data is available",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "I have translation data for multiple languages",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 163999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I request a translation",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:103"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 507200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "the translation for the current language is returned",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:107"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "if the current language translation is missing, French is used as fallback",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:112"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "if no translation is found, \"Not found\" is returned",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 206300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@translate",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "translation-and-internationalization;ui-element-translation",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "UI element translation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1134299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "translation data is available",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 41,
+            "name": "I have UI elements with data-translate attributes",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:126"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "the language changes",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:131"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 282000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "all elements with data-translate are updated",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:135"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "the text content reflects the new language",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:139"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 21099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@translate",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "translation-and-internationalization;supported-languages",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Supported languages",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 958900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "translation data is available",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 47,
+            "name": "the translation system is active",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:143"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "I check available languages",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:148"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "French (fr) is supported",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:152"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 213700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "English (en) is supported",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:156"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "Korean (ko) is supported",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:160"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "other languages are not supported",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:164"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@translate",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "translation-and-internationalization;navigation-keys-are-translated",
+        "keyword": "Scenario",
+        "line": 54,
+        "name": "Navigation keys are translated",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10975599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "translation data is available",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 55,
+            "name": "the translation system is active",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:143"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 56,
+            "name": "I check the translation keys used in the app",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:169"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 402199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "\"home\" has translations",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:173"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "\"about\" has translations",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:173"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "\"support-me\" has translations",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:173"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "\"follow-updates\" has translations",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:173"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@translate",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "translation-and-internationalization;language-storage-key",
+        "keyword": "Scenario",
+        "line": 62,
+        "name": "Language storage key",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1103299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "translation data is available",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 63,
+            "name": "the translation system is active",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:143"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 64,
+            "name": "I check the localStorage key",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:180"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 65,
+            "name": "the key is \"bun_language\"",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:184"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "the language preference is stored under this key",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:188"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@translate",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "translation-and-internationalization;fallback-translation-behavior",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "Fallback translation behavior",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 780400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "translation data is available",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 69,
+            "name": "I have a translation object with missing languages",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:192"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 184999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 70,
+            "name": "I request a translation",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:103"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 71,
+            "name": "the system falls back to French if the current language is missing",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:196"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 715000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "the system returns \"Not found\" if no translations are available",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:202"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "no errors are thrown for missing translations",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 265699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 88399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@translate",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "translation-and-internationalization",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Translation and internationalization",
+    "tags": [
+      {
+        "name": "@translate",
+        "line": 1
+      }
+    ],
+    "uri": "features\\translate\\translate.feature"
+  },
+  {
+    "description": "  As a user\n  I want to see the current application version\n  So that I can track updates and report issues accurately",
+    "elements": [
+      {
+        "description": "",
+        "id": "application-version-display;version-display-initialization",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Version display initialization",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1055299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the version system is active",
+            "match": {
+              "location": "features\\version\\version.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 166799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am on any page of the application",
+            "match": {
+              "location": "features\\version\\version.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 636099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the version system initializes",
+            "match": {
+              "location": "features\\version\\version.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 553599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the version is retrieved from the version constant",
+            "match": {
+              "location": "features\\version\\version.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 200600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the version is displayed in the element with id \"version\"",
+            "match": {
+              "location": "features\\version\\version.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 318000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@version",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "application-version-display;version-element-update",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Version element update",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 851900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the version system is active",
+            "match": {
+              "location": "features\\version\\version.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I have a version element in the DOM",
+            "match": {
+              "location": "features\\version\\version.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 300500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "the displayVersion function is called",
+            "match": {
+              "location": "features\\version\\version.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the version element text content is updated",
+            "match": {
+              "location": "features\\version\\version.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the version matches the package version format",
+            "match": {
+              "location": "features\\version\\version.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 15399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@version",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "application-version-display;version-element-not-found",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Version element not found",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 919300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the version system is active",
+            "match": {
+              "location": "features\\version\\version.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "the version element is not present in the DOM",
+            "match": {
+              "location": "features\\version\\version.steps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 440200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the displayVersion function is called",
+            "match": {
+              "location": "features\\version\\version.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "no error is thrown",
+            "match": {
+              "location": "features\\version\\version.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 477199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the function handles the missing element gracefully",
+            "match": {
+              "location": "features\\version\\version.steps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@version",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "application-version-display;version-display-on-page-load",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Version display on page load",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1165600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the version system is active",
+            "match": {
+              "location": "features\\version\\version.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I visit the application",
+            "match": {
+              "location": "features\\version\\version.steps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 537300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "the page loads",
+            "match": {
+              "location": "features\\version\\version.steps.ts:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "the version is displayed in the header or footer",
+            "match": {
+              "location": "features\\version\\version.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 317800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "the version is visible to the user",
+            "match": {
+              "location": "features\\version\\version.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@version",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "application-version-display;version-format",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Version format",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 958699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the application is initialized",
+            "match": {
+              "location": "features\\translate\\translate.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the version system is active",
+            "match": {
+              "location": "features\\version\\version.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "I have a version from the version constant",
+            "match": {
+              "location": "features\\version\\version.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I examine the version format",
+            "match": {
+              "location": "features\\version\\version.steps.ts:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the version follows semantic versioning (major.minor.patch)",
+            "match": {
+              "location": "features\\version\\version.steps.ts:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 145099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "the version is a valid string",
+            "match": {
+              "location": "features\\version\\version.steps.ts:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 17500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@version",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "application-version-display",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Application version display",
+    "tags": [
+      {
+        "name": "@version",
+        "line": 1
+      }
+    ],
+    "uri": "features\\version\\version.feature"
+  }
+]

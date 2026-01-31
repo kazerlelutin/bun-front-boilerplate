@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bun Front Boilerplate</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Minimal front-end boilerplate with Bun, TypeScript, and feature-based architecture." />
+  <meta name="author" content="Kazerlelutin" />
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="content-language" content="en" />
+
+  <link rel="stylesheet" href="public/style.css" />
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
+  <link rel="alternate" type="application/xml" href="/sitemap.xml" title="Sitemap" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Bun Front Boilerplate" />
+  <meta property="og:description"
+    content="Minimal front-end boilerplate with Bun, TypeScript, and feature-based architecture." />
+  <meta property="og:image" content="" />
+  <meta property="og:image:alt" content="" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bun Front Boilerplate" />
+  <meta name="twitter:description"
+    content="Minimal front-end boilerplate with Bun, TypeScript, and feature-based architecture." />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="" />
+</head>
+
+<body class="app">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="flex items-center justify-between p-sm" role="banner">
+    <div class="flex items-center gap-sm">
+      <a href="/" data-internal data-role="home-link" aria-label="Bun Front Boilerplate – Home">
+        <h1 class="app-name m-0 p-0">Bun Front Boilerplate</h1>
+      </a>
+      <div class="version" aria-label="Current version"><span id="version"></span></div>
+    </div>
+    <div class="flex items-center gap-sm">
+      <a href="https://ko-fi.com/kazerlelutin" target="_blank" rel="noopener noreferrer" data-external
+        data-translate="support-me" aria-label="Support me on Ko-fi (opens in new tab)"></a>
+    </div>
+  </header>
+
+  <main id="main-content" class="app-main" role="main" aria-label="Main content"></main>
+
+  <footer class="app-footer p-md text-center flex flex-col gap-md" role="contentinfo">
+    <nav class="app-footer-nav flex justify-center items-center gap-lg" aria-label="Footer navigation">
+      <a href="/" data-internal aria-current="page" data-translate="home">Home</a>
+      <a href="/about" data-internal data-translate="about">About</a>
+      <a href="https://ko-fi.com/kazerlelutin" target="_blank" rel="noopener noreferrer" data-external
+        data-translate="follow-updates" aria-label="Follow updates on Ko-fi (opens in new tab)">Follow updates</a>
+    </nav>
+  </footer>
+</body>
+
+<!-- ==================== TEMPLATES ==================== -->
+
+<div id="PAGES">
+
+  <template id="home">
+    <div class="flex flex-col gap-lg mx-auto p-lg max-w-content">
+      <h1 class="text-center" id="home-title" data-role="text" data-translate="home">HOME</h1>
+      <div id="counter-home"></div>
+      <div id="multiple-counter-home"></div>
+
+  </template>
+
+  <template id="about">
+    <div id="about-container" class="flex flex-col overflow-y-auto gap-lg mx-auto p-lg max-w-content">
+      <h1 id="about-title" data-role="text" data-translate="about">ABOUT</h1>
+      <div id="about-items-container" class="flex flex-col gap-md"></div>
+    </div>
+  </template>
+</div>
+
+<div id="COMPONENTS">
+
+  <template id="counter" data-role="counter">
+    <div class="flex flex-col gap-md items-center font-bold text-2xl max-w-content">
+      <div id="counter-container" class="font-bold text-2xl p-0 m-0">
+      </div>
+      <div class="flex gap-md" id="counter-increment-button">
+        <button class="btn" data-role="button" aria-label="Decrement" data-action="decrement">-</button>
+        <button class="btn" data-role="button" aria-label="Increment" data-action="increment">+</button>
+      </div>
+    </div>
+  </template>
+
+  <template id="multiple-counter">
+    <div class="flex flex-col gap-md items-center font-bold text-xl color-primary max-w-content">
+      <h2 data-translate="multiple-counter">MULTIPLE COUNTER</h2>
+      <div id="multiple-counter-container"
+        class="flex flex-col gap-md items-center font-bold text-xl color-primary max-w-content">0
+      </div>
+    </div>
+  </template>
+
+  <template id="about-item-template">
+    <article class="about-item">
+      <h2 data-role="text"></h2>
+      <p data-role="text"></p>
+      <a href="#" data-role="link" target="_blank" rel="noopener noreferrer"></a>
+    </article>
+  </template>
+
+</div>
+<script type="module" src="app.ts"></script>
+
+</html>
